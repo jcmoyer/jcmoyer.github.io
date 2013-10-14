@@ -1,0 +1,31 @@
+---
+layout: layout
+title: archive
+---
+
+<!-- Based on https://github.com/joearms/joearms.github.com/blob/master/archive.html -->
+
+<h2>Archive</h2>
+{% for post in site.posts %}
+    {% capture postmonth %}{{ post.date | date: "%B" }}{% endcapture %}
+    {% capture postyear %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% if postmonth != month or postyear != year %}
+        {% assign month = postmonth %}
+        {% assign year = postyear %}
+        {% if forloop.first %}
+        {% else %}
+</ul>
+        {% endif %}
+<a name="{{ month }}{{ year }}"></a>
+<h3>{{ month }} {{ year }}</h3>
+<ul>
+    {% endif %}
+  <li>
+    <span class="light postlink mono">{{ post.date | date_to_string }}</span> <span class="light">&raquo;</span> <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+{% endfor %}
+</ul>
+
+{% if site.posts == empty %}
+  <p>nothing to see here yet!</p>
+{% endif %}

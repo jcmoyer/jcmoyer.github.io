@@ -1,0 +1,40 @@
+{% assign name = "J.C. Moyer's Coding Blog" %}
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="J.C. Moyer" />
+    <title>{{ name }} - {{ page.title }}</title>
+    <link rel="stylesheet" href="/css/default.css" type="text/css" />
+    <link rel="stylesheet" href="/css/main.css" type="text/css" />
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header id="top">
+      <nav>
+        <ul>
+          <!-- {{ page.title }} -->
+          <li class="title"><a class="catlink" href="/"><h1>{{ name }}</h1></a></li>
+          <li class="link"><a class="catlink" href="/">home</a></li>
+          <li class="link"><a class="catlink" href="/archive.html">archive</a></li>
+<!--
+          <li class="link"><a class="catlink" href="#">portfolio</a></li>
+          <li class="link"><a class="catlink" href="#">contact</a></li>
+-->
+        </ul>
+      </nav>
+    </header>
+
+    <section id="content">
+      {{ content }}
+    </section>
+
+    <footer>
+      <p class="light">&copy; 2013 J.C. Moyer</p>
+      <p class="light">Hosted by <a href="http://pages.github.com/">GitHub Pages</a></p>
+      <p class="light"><a href="github.com/jcmoyer">github.com/jcmoyer</a></p>
+    </footer>
+  </body>
+</html>

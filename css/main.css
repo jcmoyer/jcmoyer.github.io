@@ -1,0 +1,142 @@
+/* this really needs to be cleaned up */
+
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: #000000;
+  display: block;
+
+  margin: 0 0 20px;
+}
+
+li.title {
+  list-style: none;
+  display: inline-block;
+
+  color: #FFFFFF;
+  
+  padding: 0;
+  margin: 0 50px 0 0; 
+
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+li.link {
+  list-style: none;
+  margin: 0 10px;
+  display: inline-block;
+
+  text-decoration: none;
+  color: #FFFFFF;
+
+  font-weight: 200;
+}
+
+a.catlink {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+a.catlink:hover {
+  text-decoration: none;
+  color: #C0C0C0;
+}
+
+a {
+  text-decoration: none;
+  color: #007FFF;
+}
+
+a:hover {
+  color: #004FCF;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #DDDDDD;
+  background-color: #EEEEEE;
+  font-size: 0.8em;
+  padding: 8px;
+
+  line-height: 30%;
+}
+
+.light {
+  color: #505050;
+}
+
+.mono {
+  font-family: monospace;
+}
+
+#content {
+  margin: 50px;
+  color: #303030;
+}
+
+li.postlink {
+  list-style: none;
+}
+
+.title {
+}
+
+#post {
+  margin: 10px 0px;
+}
+
+#post li {
+  margin: 0px 20px;
+}
+
+div.highlight {
+  border: 1px solid #DDDDDD;
+  padding: 8px;
+  background-color: #EEEEEE;
+  border-radius: 4px;
+}
+
+pre {
+  margin: 0;
+}
+
+code, code * {
+  font-family: monospace;
+}
+
+div.postprev {
+  border: 1px solid #EEE;
+
+  padding: 0 8px 8px;
+  margin: 0 0 20px 0;
+}
+
+div.postprevh {
+  background-color: #EEE;
+  margin: 0 -8px;
+
+  padding: 0 8px 8px;
+}
+
+.readmore {
+  font-size: 0.8em;
+}
+
+/* maybe apply to a specific class for post previews */
+h2 {
+  margin: 0;
+}
+
+a.postprevlink {
+  color: #000000;
+}
+a.postprevlink:hover {
+  color: #303030;
+}

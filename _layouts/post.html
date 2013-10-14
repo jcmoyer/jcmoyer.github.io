@@ -1,0 +1,23 @@
+---
+layout: layout
+---
+
+<div>
+
+    <div class="postprevh">
+      <h2>{{ page.title }}</h2>
+      <span class="light">&raquo; {{ page.date | date_to_string }}</span>
+    </div>
+
+<!--
+<h2 class="title">{{ page.title }}</h2>
+<span class="light">{{ page.date | date_to_string }}</span>
+-->
+
+</div>
+
+<div id="post">
+  {{ content }}
+</div>
+
+<p class="readmore"><a href="#top">&uarr; Top</a></p>
