@@ -6,7 +6,7 @@ header {
   background: #000000;
 }
 
-li.title, li.link {
+li.title, li.category {
   list-style: none;
   display: inline-block;
   color: #FFFFFF;
@@ -17,18 +17,18 @@ li.title {
   margin: auto 50px 0 0;
 }
 
-li.link {
+li.category {
   margin: auto 10px;
   font-weight: 200;
   text-transform: lowercase;
 }
 
-li.title a, li.link a {
+li.title a, li.category a {
   text-decoration: none;
   color: #FFFFFF;
 }
 
-li.title a:hover, li.link a:hover {
+li.title a:hover, li.category a:hover {
   color: #C0C0C0;
 }
 
@@ -68,37 +68,37 @@ code, code * {
   font-family: monospace;
 }
 
-div.postprev {
+div.post-header, div.post-body {
   border: 1px solid #EEE;
-
-  padding: 0 16px 0 16px;
-  margin: 0 auto 20px auto;
-
   width: 780px;
 }
 
-div.postprevh {
-  background-color: #EEE;
-  margin: 0 -16px;
-
-  padding: 0 8px 8px;
+div.post-body {
+  padding: 0 16px;
+  margin: 0 auto 20px auto;
 }
 
-div.postprevh h2 {
+div.post-body p {
+  text-align: justify;
+  font-size: 1.167em;
+}
+
+div.post-header {
+  background-color: #EEE;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+div.post-header h2 {
   margin: 0;
 }
 
 /* links to individual posts from index */
-a.postprevlink {
+div.post-header a {
   color: #000000;
 }
-a.postprevlink:hover {
+div.post-header a:hover {
   color: #303030;
-}
-
-.postprev p {
-  text-align: justify;
-  font-size: 1.167em;
 }
 
 a {
@@ -111,6 +111,6 @@ a:hover {
   color: #004FCF;
 }
 
-a.minilink {
+a.mini {
   font-size: 0.8em;
 }
