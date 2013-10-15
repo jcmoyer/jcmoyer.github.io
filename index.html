@@ -11,7 +11,7 @@ title: home
     </div>
     {% if post.content contains '<!--more-->' %}
       {{ post.content | split:'<!--more-->' | first }}
-      <div><a class="minilink" href="{{ post.url }}">Read more...</a></div>
+      <a class="minilink" href="{{ post.url }}">Read more...</a>
     {% else %}
       {{ post.content }}
     {% endif %}
