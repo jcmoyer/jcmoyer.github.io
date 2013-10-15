@@ -49,15 +49,6 @@ a.catlink:hover {
   color: #C0C0C0;
 }
 
-a {
-  text-decoration: none;
-  color: #007FFF;
-}
-
-a:hover {
-  color: #004FCF;
-}
-
 footer {
   text-align: center;
   border-top: 1px solid #DDDDDD;
@@ -89,7 +80,9 @@ li.postlink {
 }
 
 #post {
-  margin: 10px 0px;
+  margin: 0px auto 0px auto;
+  width: 780px;
+  border: 1px solid #EEE;
 }
 
 #post li {
@@ -101,6 +94,7 @@ div.highlight {
   padding: 8px;
   background-color: #EEEEEE;
   border-radius: 4px;
+  margin: 16px;
 }
 
 pre {
@@ -114,19 +108,17 @@ code, code * {
 div.postprev {
   border: 1px solid #EEE;
 
-  padding: 0 8px 8px;
-  margin: 0 0 20px 0;
+  padding: 0 16px 0 16px;
+  margin: 0 auto 20px auto;
+
+  width: 780px;
 }
 
 div.postprevh {
   background-color: #EEE;
-  margin: 0 -8px;
+  margin: 0 -16px;
 
   padding: 0 8px 8px;
-}
-
-.readmore {
-  font-size: 0.8em;
 }
 
 /* maybe apply to a specific class for post previews */
@@ -139,4 +131,20 @@ a.postprevlink {
 }
 a.postprevlink:hover {
   color: #303030;
+}
+
+#post p, .postprev p {
+  text-align: justify;
+  font-size: 1.167em;
+}
+
+a.minilink {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #007FFF;
+}
+
+a.minilink:hover {
+  color: #004FCF;
+  text-decoration: underline;
 }
