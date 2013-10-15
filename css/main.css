@@ -1,51 +1,34 @@
-/* this really needs to be cleaned up */
-
-* {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
 body {
-  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 header {
   background: #000000;
-  display: block;
+}
 
-  margin: 0 0 20px;
+li.title, li.link {
+  list-style: none;
+  display: inline-block;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 li.title {
-  list-style: none;
-  display: inline-block;
-
-  color: #FFFFFF;
-  
-  padding: 0;
-  margin: 0 50px 0 0; 
-
-  text-decoration: none;
-  color: #FFFFFF;
+  margin: auto 50px 0 0;
 }
 
 li.link {
-  list-style: none;
-  margin: 0 10px;
-  display: inline-block;
-
-  text-decoration: none;
-  color: #FFFFFF;
-
+  margin: auto 10px;
   font-weight: 200;
+  text-transform: lowercase;
 }
 
-a.catlink {
+li.title a, li.link a {
   text-decoration: none;
   color: #FFFFFF;
 }
 
-a.catlink:hover {
-  text-decoration: none;
+li.title a:hover, li.link a:hover {
   color: #C0C0C0;
 }
 
@@ -63,32 +46,12 @@ footer {
   color: #505050;
 }
 
-.mono {
-  font-family: monospace;
-}
-
 #content {
   margin: 50px;
   color: #303030;
 }
 
-li.postlink {
-  list-style: none;
-}
-
-.title {
-}
-
-#post {
-  margin: 0px auto 0px auto;
-  width: 780px;
-  border: 1px solid #EEE;
-}
-
-#post li {
-  margin: 0px 20px;
-}
-
+/* syntax highlighted box */
 div.highlight {
   border: 1px solid #DDDDDD;
   padding: 8px;
@@ -121,11 +84,11 @@ div.postprevh {
   padding: 0 8px 8px;
 }
 
-/* maybe apply to a specific class for post previews */
-h2 {
+div.postprevh h2 {
   margin: 0;
 }
 
+/* links to individual posts from index */
 a.postprevlink {
   color: #000000;
 }
@@ -133,18 +96,21 @@ a.postprevlink:hover {
   color: #303030;
 }
 
-#post p, .postprev p {
+.postprev p {
   text-align: justify;
   font-size: 1.167em;
 }
 
-a.minilink {
-  font-size: 0.8em;
+a {
   text-decoration: none;
   color: #007FFF;
 }
 
-a.minilink:hover {
-  color: #004FCF;
+a:hover {
   text-decoration: underline;
+  color: #004FCF;
+}
+
+a.minilink {
+  font-size: 0.8em;
 }
