@@ -1,0 +1,27 @@
+{
+  "name": "generate-blog",
+  "version": "0.0.1",
+  "description": "Does the thing Jekyll can't",
+  "license": "Unlicense",
+  "author": "J.C. Moyer",
+  "repository": "jcmoyer/jcmoyer.github.io",
+  "dependencies": {
+    "commander": "^2.8.1",
+    "highlight.js": "^8.6.0",
+    "js-yaml": "^3.3.1",
+    "liquid-node": "^2.5.0",
+    "marked": "^0.3.3",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.10.3"
+  },
+  "devDependencies": {
+    "coffee-script": "1.10.0"
+  },
+  "scripts": {
+    "build": "coffee --compile --output lib/ src/",
+    "prepublish": "coffee --compile --output lib/ src/"
+  },
+  "bin": {
+    "generate-blog": "./bin/generate-blog.js"
+  }
+}
